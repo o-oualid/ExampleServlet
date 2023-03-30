@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <context-param>
+        <param-name>valeur_initial</param-name>
+        <param-value>50</param-value>
+        <description>Valeur initial du compteur</description>
+    </context-param>
+    <context-param>
+        <param-name>mysql_server</param-name>
+        <param-value>localhost:3306</param-value>
+    </context-param>
+    <context-param>
+        <param-name>mysql_user</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>mysql_password</param-name>
+        <param-value>password123456789</param-value>
+    </context-param>
+ <!--
+    <servlet>
+        <servlet-name>IncrementServlet</servlet-name>
+        <init-param>
+            <param-name>valeur_initial</param-name>
+            <param-value>50</param-value>
+            <description>Valeur initial du compteur</description>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IncrementServlet</servlet-name>
+        <url-pattern>/IncrementServlet</url-pattern>
+    </servlet-mapping>-->
+</web-app>
